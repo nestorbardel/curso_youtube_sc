@@ -1,4 +1,15 @@
+<!-- <h1 appEstiloHermanos>{{nombre | miPipePersonalizado}}</h1> -->
+<h1>{{nombre | lowercase}}</h1>
+<h2>Fecha de hoy: {{fecha | date:'YYYY/ MM/DDDD'}}</h2>
+<h2>Cuanto cotiza el dolar: {{dolar | currency:"eur"}}</h2>
+<!-- Suggested code may be subject to a license. Learn more: ~LicenseLog:358867360. -->
+<h2>El numero Pi: {{pi | number:'1.2-2 '}}</h2>
+<h2>El porcentaje es: {{factor  | percent}}</h2>
+<button type="button" (click)="saludar()">Saludar</button>
+<button type="button" (click)="preguntar()">Preguntar</button>
 
+
+<!-- 
 
 <app-hijo
   (mensajeDesdeHijo)="recibirMensaje($event)"
@@ -10,4 +21,4 @@
 <h5>El mensaje recibido desde el hijo es: {{mensajeRecibido}}</h5>
 
 <h1>Contador: </h1>
-<p>{{valorContador}}</p>
+<p>{{valorContador}}</p> -->
